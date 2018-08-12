@@ -1,4 +1,9 @@
-$font-stack-base: 'Poppins',
-'Helvetica Neue',
+$font-stack-base: "Poppins",
+"Helvetica Neue",
 Arial,
-sans-serif;
+sans-serif !default;
+$font-base: 16px !default;
+$font-text-primary: #454545 !default;
+$font-text-inverse: whitesmoke !default;
+$primary-color: #00cc83 !default;
+$secondary-color: #183a93 !default;

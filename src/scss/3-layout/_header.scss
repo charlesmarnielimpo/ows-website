@@ -1,0 +1,46 @@
+.l-header {
+  height: 370px;
+  max-height: 370px;
+  .l-header__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.l-header__nav {
+  display: inherit;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.c-nav__item {
+  cursor: pointer;
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $secondary-color;
+    transition: width 0.3s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.l-header__heading {
+  position: relative;
+  text-align: center;
+  .l-header__heading--is-shadow {
+    font-size: 9rem;
+    color: lighten($font-text-inverse, 2);
+    opacity: 0.2;
+    margin: 0;
+  }
+  .l-header__heading--is-main {
+    font-size: 4rem;
+    color: $font-text-inverse;
+    margin: -60px 0 0 0;
+  }
+}

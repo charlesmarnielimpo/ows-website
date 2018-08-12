@@ -1,0 +1,98 @@
+.l-footer {
+  position: relative;
+  background-color: $secondary-color;
+  color: $font-text-inverse;
+  padding: 50px 0 20px 0;
+  width: 100%;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $font-text-inverse;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  h4 {
+    &.l-footer__heading {
+      color: $primary-color;
+    }
+  }
+}
+
+.l-footer__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  .l-footer__backtotop {
+    position: fixed;
+    right: 100px;
+    bottom: 65px;
+  }
+}
+
+.l-footer__about {
+  position: relative;
+  width: 50%;
+  .l-footer__about--text {
+    margin-top: 30px;
+  }
+}
+
+.l-footer__links {
+  .l-footer__navlink {
+    &::before {
+      font-family: "Ionicons";
+      content: "\f287";
+    }
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.l-footer__socialmedia {
+  margin-top: 50px;
+  ul {
+    display: flex;
+  }
+  i {
+    position: relative;
+    font-size: 20px;
+    margin-top: 9px;
+  }
+  .l-footer_social {
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.1s ease-in;
+    &:hover {
+      background-color: $primary-color;
+      color: $font-text-inverse;
+    }
+    a {
+      &:hover {
+        color: $font-text-inverse;
+      }
+    }
+  }
+}
+
+.l-footer__copyright {
+  color: darken($font-text-inverse, 10);
+  p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  hr {
+    border: 1px solid darken($secondary-color, 3);
+  }
+}

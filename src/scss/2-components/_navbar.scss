@@ -1,0 +1,25 @@
+.c-nav__brand {
+  width: 170px;
+  height: auto;
+  img {
+    width: 100%;
+  }
+}
+
+.c-nav__wrapper {
+  ul {
+    display: flex;
+  }
+  .c-nav__item {
+    list-style: none;
+    margin: 0 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .c-nav__link {
+      font-weight: normal;
+      text-decoration: none;
+      color: $font-text-inverse;
+    }
+  }
+}

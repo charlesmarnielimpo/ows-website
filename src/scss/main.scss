@@ -3,8 +3,16 @@
 @import '0-abstracts/_functions';
 @import '0-abstracts/_mixins';
 @import '0-abstracts/_placeholders';
+@import '6-vendors/_normalize';
 @import '1-base/_base';
 @import '1-base/_fonts';
 @import '1-base/_typography';
 @import '3-layout/_header';
 @import '3-layout/_footer';
+@import '2-components/_navbar';
+@import '2-components/_container';
+@import '2-components/_button';
+@import '4-pages/_about';
+@import '4-pages/_services';
+@import '4-pages/_ourwork';
+@import '4-pages/_contactus';

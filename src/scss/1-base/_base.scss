@@ -1,9 +1,14 @@
-html {
-  text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+* {
+  &::selection {
+    background: $primary-color;
+    color: whitesmoke;
+  }
 }
 
 body {
   font-family: $font-stack-base;
+  font-size: $font-base;
+  font-weight: 300;
+  color: $font-text-primary !important;
   line-height: 1.5;
 }

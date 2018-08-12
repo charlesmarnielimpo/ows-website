@@ -1,0 +1,34 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn-primary-outlined {
+  border-radius: 50px;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  &:hover {
+    color: $font-text-inverse;
+    background: $primary-color;
+  }
+}
+
+.btn-secondary-outlined {
+  border-radius: 50px;
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  &:hover {
+    color: $font-text-inverse;
+    background: $secondary-color;
+  }
+}
